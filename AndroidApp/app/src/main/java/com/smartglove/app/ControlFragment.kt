@@ -107,8 +107,8 @@ class ControlFragment : Fragment(), GloveDataListener {
 
         binding.tvCalibrationStatus.text = when (mainActivity.calibrationStep) {
             0 -> mainActivity.getString("put_on_glove")
-            1 -> mainActivity.getString("calibration_step2")
-            2 -> mainActivity.getString("calibration_step1")
+            1 -> mainActivity.getString("calibration_step1")
+            2 -> mainActivity.getString("calibration_step2")
             else -> mainActivity.getString("calibration_done")
         }
 
