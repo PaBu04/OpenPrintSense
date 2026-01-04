@@ -1,0 +1,22 @@
+# Android
+AndroidApp/.gradle/
+AndroidApp/build/
+AndroidApp/app/build/
+AndroidApp/local.properties
+AndroidApp/.idea/
+AndroidApp/*.iml
+AndroidApp/app/*.iml
+
+# Arduino
+*.elf
+*.hex
+*.bin
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.swp
+*.swo
