@@ -164,7 +164,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📬 Contact
 
-Project Link: [https://github.com/yourusername/OpenPrintSense](https://github.com/yourusername/OpenPrintSense)
+E-Mail: [kontakt@paulbuda.de](mailto:kontakt@paulbuda.de)
 
 ---
 
