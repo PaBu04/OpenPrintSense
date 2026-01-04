@@ -1,5 +1,7 @@
 # 🧤 OpenPrintSense - 3D Printed BLE Flex Sensor Glove
 
+![OpenPrintSense Banner](Images/banner.jpg)
+
 An open-source 3D-printed smart glove that measures finger flexion using stretch sensors and transmits data via Bluetooth Low Energy (BLE) to an Android app in real-time.
 
 ![Platform](https://img.shields.io/badge/Platform-Seeed%20XIAO%20nRF52840-blue)
