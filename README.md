@@ -48,8 +48,8 @@ The 3D model is available in `/CAD Files/OpenPrintSense.step` - compatible with 
 ```
 
 ### Printing Tips
-- Print the TPU base at 230°C, bed 50°C
-- Print conductive filament at 220-230°C
+- Print the TPU base at 230°C, bed 35°C
+- Print conductive filament at 250°C with 105% Flow
 - Use multi-material printing or manual filament swap
 - Ensure good layer adhesion for reliable conductivity
 
@@ -94,8 +94,8 @@ The 3D model is available in `/CAD Files/OpenPrintSense.step` - compatible with 
 1. Put on the glove
 2. Connect via the app
 3. Press "Start Calibration"
-4. Fully extend your finger → Press "Set Min"
-5. Fully bend your finger → Press "Set Max"
+4. Fully bend your finger → Press "Set Min"
+5. Fully extend your finger → Press "Set Max"
 6. Done! The app now shows accurate flex percentage
 
 ## 📡 BLE Protocol
@@ -164,7 +164,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📬 Contact
 
-E-Mail: [kontakt@paulbuda.de](mailto:kontakt@paulbuda.de)
+E-Mail: [mailto:kontakt@paulbuda.de](mailto:kontakt@paulbuda.de)
 
 ---
 
