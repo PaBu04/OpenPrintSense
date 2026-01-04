@@ -8,7 +8,15 @@ An open-source 3D-printed smart glove that measures finger flexion using stretch
 
 ## 📖 Overview
 
-OpenPrintSense is an open-source project that combines 3D printing, hardware, and software to create a wearable finger tracking system. It uses a flex/stretch sensor attached to a 3D-printed glove frame to measure finger bend angles, which are then transmitted wirelessly to an Android smartphone.
+OpenPrintSense is an open-source project that combines 3D printing, hardware, and software to create a wearable finger tracking system. The key innovation is a **fully 3D-printed flex sensor** that uses conductive TPU filament - as the sensor bends, its electrical resistance changes, allowing precise measurement of finger flexion. Data is transmitted wirelessly via BLE to an Android smartphone.
+
+### How It Works
+
+The 3D-printed sensor combines flexible TPU with conductive filament. When you bend your finger:
+1. The conductive filament stretches
+2. This increases the electrical resistance
+3. The microcontroller reads the resistance change via analog input
+4. The bend angle is calculated and sent to the app
 
 ### Use Cases
 - 🎮 Gesture-based game controllers
@@ -19,18 +27,31 @@ OpenPrintSense is an open-source project that combines 3D printing, hardware, an
 
 ## 🔧 Hardware Requirements
 
+### Electronics
 - **Microcontroller**: [Seeed XIAO nRF52840 Sense](https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html)
-- **Sensor**: Flex/Stretch sensor (connected to A0)
 - **Power**: USB-C or 3.7V LiPo battery
-- **Glove**: Any comfortable glove to mount the sensor
+- **Wires**: For connecting sensor to microcontroller
+
+### 3D Printing Materials
+- **Flexible Base**: [Bambu Lab TPU 90A](https://eu.store.bambulab.com/de/products/tpu-85a-tpu-90a) - Flexible structure
+- **Conductive Element**: [Recreus FilaFlex Conductive](https://recreus.com/en/products/filaflex-conductivo) - Variable resistance sensing
+
+### CAD Files
+The 3D model is available in `/CAD Files/OpenPrintSense.step` - compatible with all major CAD software and slicers.
 
 ### Wiring Diagram
 
 ```
-Stretch Sensor ──┬── A0 (Analog Input)
-                 │
-                 └── GND (with pull-down resistor)
+3D Printed Sensor ──┬── A0 (Analog Input)
+                    │
+                    └── GND (with pull-down resistor)
 ```
+
+### Printing Tips
+- Print the TPU base at 230°C, bed 50°C
+- Print conductive filament at 220-230°C
+- Use multi-material printing or manual filament swap
+- Ensure good layer adhesion for reliable conductivity
 
 ## 📱 Software Components
 
@@ -91,16 +112,19 @@ Stretch Sensor ──┬── A0 (Analog Input)
 ## 📁 Project Structure
 
 ```
-SmartGlove/
+OpenPrintSense/
+├── CAD Files/
+│   └── OpenPrintSense.step   # 3D model for printing
 ├── nRF52840/
-│   └── nRF52840.ino      # Arduino firmware
+│   └── nRF52840.ino          # Arduino firmware
 ├── AndroidApp/
 │   ├── app/
 │   │   └── src/main/
-│   │       ├── java/     # Kotlin source code
-│   │       └── res/      # Layouts, drawables, themes
+│   │       ├── java/         # Kotlin source code
+│   │       └── res/          # Layouts, drawables, themes
 │   ├── build.gradle.kts
 │   └── settings.gradle.kts
+├── LICENSE
 └── README.md
 ```
 
