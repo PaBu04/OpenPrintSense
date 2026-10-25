@@ -6,8 +6,24 @@ AndroidApp/local.properties
 AndroidApp/.idea/
 AndroidApp/*.iml
 AndroidApp/app/*.iml
+AndroidApp/.kotlin/
+AndroidApp/captures/
+local.properties
+*.apk
+*.aab
+
+# Signing keys and secrets
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+.env
+
+# Logs
+*.log
 
 # Arduino
+nRF52840/secrets.h
 *.elf
 *.hex
 *.bin

@@ -1,0 +1,5 @@
+# Shell-Skripte brauchen LF, sonst laufen sie unter Linux/macOS nicht
+gradlew text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+*.jar binary

@@ -82,6 +82,8 @@ class ControlFragment : Fragment(), GloveDataListener {
         updateRawValueText()
         if (!mainActivity.isConnected) {
             onStretchValueReceived(0)
+            // Laufende Meldung (z.B. "Kopple...") nach dem Kopplungsdialog wieder anzeigen
+            mainActivity.lastStatus?.let { binding.tvStatus.text = it }
         }
     }
 
