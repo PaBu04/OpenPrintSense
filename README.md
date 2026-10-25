@@ -23,7 +23,7 @@ The 3D-printed sensor combines flexible TPU with conductive filament. When you b
 ### Use Cases
 - 🎮 Gesture-based game controllers
 - 🤖 Robot hand control
-- 🏥 Rehabilitation therapy tracking
+- 📈 Recording finger bend angles for your own experiments
 - 🎵 Musical instrument interfaces
 - 📊 Motion capture for research
 
@@ -142,6 +142,7 @@ OpenPrintSense/
 │   ├── build.gradle.kts
 │   └── settings.gradle.kts
 ├── LICENSE
+├── SECURITY.md
 └── README.md
 ```
 
@@ -175,6 +176,16 @@ The firmware can be extended to support multiple flex sensors for full hand trac
 | Raw value always 0 | Check sensor wiring to A0 pin |
 | Calibration not working | Ensure you're connected before calibrating |
 
+## ⚠️ Disclaimer
+
+OpenPrintSense is an experimental maker project. It is **not a medical device** and is not intended for the diagnosis, treatment, therapy or monitoring of any disease or medical condition. You build and use it at your own risk. The software and design files are provided "as is", without warranty of any kind (see the [MIT License](LICENSE)).
+
+**Safety notes**
+- Never charge a LiPo battery unattended.
+- Do not use damaged, swollen or punctured battery cells.
+- Check polarity before connecting a battery; reversed polarity can destroy the board or cause a fire.
+- Stop wearing the glove if it irritates your skin.
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -188,6 +199,14 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+Please report security issues privately as described in [SECURITY.md](SECURITY.md).
+
+## 💖 Support
+
+OpenPrintSense is free and will stay free. If you'd like to support its development, you can do so voluntarily via [GitHub Sponsors](https://github.com/sponsors/PaBu04) or [Ko-fi](https://ko-fi.com/paulbuda).
+
+Contributions are voluntary gifts to a private hobby project. They don't come with anything in return: no support, no features or priorities in exchange for money. They are not tax-deductible.
 
 ## 📬 Contact
 
